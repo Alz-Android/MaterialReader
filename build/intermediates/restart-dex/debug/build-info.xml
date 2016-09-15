@@ -4,7 +4,7 @@
     api-level="23"
     density="420dpi"
     format="7"
-    timestamp="438245310290500"
+    timestamp="74813749549213"
     token="21919822636975866" >
 
     <task
@@ -20,40 +20,11 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="C:\Users\Al\Desktop\P5\xyzreader\XYZReader\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
-
-    <build timestamp="410234037470515" >
+    <build timestamp="74622173514036" >
         <artifact
             location="C:\Users\Al\Desktop\P5\xyzreader\XYZReader\build\outputs\apk\XYZReader-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="413358275113460"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="C:\Users\Al\Desktop\P5\xyzreader\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="414530642543033" >
-        <artifact
-            location="C:\Users\Al\Desktop\P5\xyzreader\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Al\Desktop\P5\xyzreader\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Al\Desktop\P5\xyzreader\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Al\Desktop\P5\xyzreader\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="438245310290500" >
-        <artifact
-            location="C:\Users\Al\Desktop\P5\xyzreader\XYZReader\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-    </build>
+    <build timestamp="74813749549213" />
 
 </instant-run>
