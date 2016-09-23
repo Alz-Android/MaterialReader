@@ -64,6 +64,10 @@
         "source": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
+        "merged": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\toolbar.xml",
+        "source": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\src\\main\\res\\layout\\toolbar.xml"
+    },
+    {
         "merged": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
         "source": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_item.xml"
     },
@@ -78,10 +82,6 @@
     {
         "merged": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
-    },
-    {
-        "merged": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\frag3.xml",
-        "source": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\src\\main\\res\\layout\\frag3.xml"
     },
     {
         "merged": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
@@ -154,10 +154,6 @@
     {
         "merged": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
         "source": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\layout\\design_navigation_item_header.xml"
-    },
-    {
-        "merged": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_article_detail2.xml",
-        "source": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\src\\main\\res\\layout\\fragment_article_detail2.xml"
     },
     {
         "merged": "C:\\Users\\Al\\Desktop\\P5\\xyzreader\\XYZReader\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",

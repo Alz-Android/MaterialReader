@@ -40,10 +40,7 @@ public class ArticleListActivity extends ActionBarActivity implements
     private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
-
-    int verticalList = 1;
-    Drawable dividerDrawable = ContextCompat.getDrawable(this, R.drawable.padded_divider);
-    RecyclerView.ItemDecoration dividerItemDecoration = new DividerItemDecoration(dividerDrawable, verticalList);
+    private RecyclerView.ItemDecoration mDividerItemDecoration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +49,11 @@ public class ArticleListActivity extends ActionBarActivity implements
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
+        int verticalList = 1;
+        Drawable dividerDrawable = ContextCompat.getDrawable(getBaseContext(), R.drawable.padded_divider);
+        mDividerItemDecoration = new DividerItemDecoration(dividerDrawable, verticalList);
 
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
+//        final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
@@ -113,7 +113,7 @@ public class ArticleListActivity extends ActionBarActivity implements
                 new StaggeredGridLayoutManager(columnCount, StaggeredGridLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(sglm);
 
-        mRecyclerView.addItemDecoration(dividerItemDecoration);
+        mRecyclerView.addItemDecoration(mDividerItemDecoration);
     }
 
     @Override
