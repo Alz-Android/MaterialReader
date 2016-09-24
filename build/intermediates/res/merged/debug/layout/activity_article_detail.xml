@@ -17,7 +17,7 @@
         <ImageButton
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             android:id="@+id/action_up"
-            android:layout_width="40dp"
+            android:layout_width="46dp"
             android:layout_height="?actionBarSize"
             android:scaleType="fitCenter"
             android:paddingTop="16dp"
