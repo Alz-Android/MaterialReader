@@ -125,21 +125,6 @@ public class ArticleDetailFragment extends Fragment implements
         return mRootView;
     }
 
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        final CoordinatorLayout coordinatorLayout = (CoordinatorLayout) getView().findViewById(R.id.main_content);
-        Snackbar snackbar = Snackbar
-                .make(coordinatorLayout, "Swipe Left or Right", Snackbar.LENGTH_LONG);
-        View snackbarView = snackbar.getView();
-        snackbarView.setBackgroundColor(Color.DKGRAY);
-        TextView textView = (TextView) snackbarView.findViewById(android.support.design.R.id.snackbar_text);
-        textView.setTextColor(Color.WHITE);
-        textView.setTextSize(getResources().getDimension(R.dimen.detail_snackBar_text));
-        snackbar.show();
-    }
-
     private void updateStatusBar() {
         int color = 0;
         if (mPhotoView != null && mTopInset != 0 && mScrollY > 0) {
