@@ -11,6 +11,8 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ShareCompat;
 import android.support.v7.graphics.Palette;
 import android.text.Html;
@@ -103,26 +105,6 @@ public class ArticleDetailFragment extends Fragment implements
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
-    //    mDrawInsetsFrameLayout = (DrawInsetsFrameLayout)
-    //            mRootView.findViewById(R.id.draw_insets_frame_layout);
-    //    mDrawInsetsFrameLayout.setOnInsetsCallback(new DrawInsetsFrameLayout.OnInsetsCallback() {
-//            @Override
-//            public void onInsetsChanged(Rect insets) {
-//                mTopInset = insets.top;
-//            }
-//        });
-
-//        mScrollView = (ObservableScrollView) mRootView.findViewById(R.id.scrollview);
-//        mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
-//            @Override
-//            public void onScrollChanged() {
-//                mScrollY = mScrollView.getScrollY();
-//                getActivityCast().onUpButtonFloorChanged(mItemId, ArticleDetailFragment.this);
-//                mPhotoContainerView.setTranslationY((int) (mScrollY - mScrollY / PARALLAX_FACTOR));
-//                updateStatusBar();
-//            }
-//        });
-
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
 //        mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
 
@@ -137,10 +119,25 @@ public class ArticleDetailFragment extends Fragment implements
                         .getIntent(), getString(R.string.action_share)));
             }
         });
-
-        bindViews();
+// Not needed since we haven't loaded the cursor yet
+ //       bindViews();
         updateStatusBar();
         return mRootView;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        final CoordinatorLayout coordinatorLayout = (CoordinatorLayout) getView().findViewById(R.id.main_content);
+        Snackbar snackbar = Snackbar
+                .make(coordinatorLayout, "Swipe Left or Right", Snackbar.LENGTH_LONG);
+        View snackbarView = snackbar.getView();
+        snackbarView.setBackgroundColor(Color.DKGRAY);
+        TextView textView = (TextView) snackbarView.findViewById(android.support.design.R.id.snackbar_text);
+        textView.setTextColor(Color.WHITE);
+        textView.setTextSize(getResources().getDimension(R.dimen.detail_snackBar_text));
+        snackbar.show();
     }
 
     private void updateStatusBar() {
@@ -155,7 +152,6 @@ public class ArticleDetailFragment extends Fragment implements
                     (int) (Color.blue(mMutedColor) * 0.9));
         }
         mStatusBarColorDrawable.setColor(color);
-//        mDrawInsetsFrameLayout.setInsetBackground(mStatusBarColorDrawable);
     }
 
     static float progress(float v, float min, float max) {

@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="86dp"
         android:background="@color/primary"
-
+        android:elevation="4dp"
         app:layout_collapseMode="pin"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
@@ -21,8 +21,8 @@
         android:layout_alignParentBottom="true"
         android:singleLine="true"
         android:text="@string/xyz_reader"
-        android:textColor="@android:color/white"
-        android:textSize="30dp"
+        android:textColor="@color/icon_text"
+        android:textSize="@dimen/detail_title_text_size"
         android:textStyle="bold" />
 
     </android.support.v7.widget.Toolbar>
