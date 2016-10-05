@@ -113,7 +113,7 @@ public class ArticleDetailActivity extends ActionBarActivity
 
         final CoordinatorLayout coordinatorLayout = (CoordinatorLayout) findViewById(R.id.detail_frame);
         Snackbar snackbar = Snackbar
-                .make(coordinatorLayout, "Swipe for other articles", Snackbar.LENGTH_LONG);
+                .make(coordinatorLayout, getString(R.string.snackbar_string), Snackbar.LENGTH_LONG);
         View snackbarView = snackbar.getView();
         snackbarView.setBackgroundColor(Color.DKGRAY);
         TextView textView = (TextView) snackbarView.findViewById(android.support.design.R.id.snackbar_text);
